@@ -5,6 +5,8 @@ import AddMonsterView from './components/addMonsterView';
 import { Switch, Route } from 'react-router-dom';
 
 function App() {
+  document.title = "幽港迷城怪物生命帮助工具"
+
   return (
     <Switch>
       <Route path="/add" component={AddMonsterView} />
