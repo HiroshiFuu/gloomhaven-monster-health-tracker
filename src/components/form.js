@@ -6,14 +6,14 @@ export const FormGroup = styled.div`
 `;
 
 export const FormGroupTitle = styled.span`
-    font-family: 'pirata-one';
+    font-family: 'custom-font';
     font-style: italic;
     display: block;
 `;
 
 const inputBase = (props) => `
     background-color: rgba(255,255,255, 0.6);
-    font-family: 'pirata-one';
+    font-family: 'custom-font';
     border: 2px solid black;
     color: black;
     width: 100%;
@@ -34,7 +34,7 @@ export const DropDown = styled.select`
 const CheckboxContainer = styled.div`
     display:flex;
     align-items:center;
-    font-family: 'pirata-one';
+    font-family: 'custom-font';
     font-size: 1.2em;
 `;
 

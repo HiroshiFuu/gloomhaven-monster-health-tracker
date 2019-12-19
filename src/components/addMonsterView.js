@@ -14,7 +14,7 @@ const StepTitle = styled.h1`
         padding-top: 0;
         margin-top:0;
     }
-    font-family: 'pirata-one';
+    font-family: 'custom-font';
 `;
 
 const MonsterSelectionView = styled.div`

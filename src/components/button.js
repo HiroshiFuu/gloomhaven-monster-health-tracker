@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const ButtonBase = styled.button`
     background-color: rgba(255,255,255, 0.6);
-    font-family: 'pirata-one';
+    font-family: 'custom-font';
     border: 2px solid black;
     color: black;
     text-decoration: none;

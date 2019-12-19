@@ -9,8 +9,8 @@ import { mainReducer } from './reducer';
 import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   @font-face {
-    font-family: 'pirata-one';
-    src: url('PirataOne-Gloomhaven.ttf');
+    font-family: 'custom-font';
+    src: url('MFMiaoMiao_Noncommercial-Regular.ttf');
   }
 
   #root, body, html {

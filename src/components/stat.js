@@ -16,7 +16,7 @@ export const Stat = styled.div`
     }
 
     span {
-        font-family: 'pirata-one';
+        font-family: 'custom-font';
         font-size: 32px;
     }
 `;

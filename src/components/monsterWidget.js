@@ -67,7 +67,7 @@ const HealthDisplay = styled.div`
     flex-grow: 1;
 
     span {
-        font-family: 'pirata-one';
+        font-family: 'custom-font';
         font-size: 2.8em;
         margin-right: 5px;
     }
