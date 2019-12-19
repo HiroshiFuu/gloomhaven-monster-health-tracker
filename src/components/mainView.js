@@ -14,20 +14,28 @@ const MonsterWidgetsContainer = styled.div`
 `;
 
 const AddButton = styled(TextButton)`
-    font-size: 3.5em;
+    font-size: 4rem;
+    line-height: 48px;
     display: block;
     width: 40px;
     height: 40px;
-    line-height: 40px;
     vertical-align: middle;
-    text-align:center;
+    text-align: center;
     position: absolute;
     z-index: 2;
-    top:10px;
-    left: 10px;
+    top: 15px;
+    left: 15px;
+
+    @media(max-width: 900px) {
+        font-size: 3rem;
+        line-height: 32px;
+        width: 24px;
+        height: 24px;
+    }
 `;
 
 const MainView = () => {
+
     const [{ monsters }, dispatch] = getState();
 
     const takeDamage = (monster) =>

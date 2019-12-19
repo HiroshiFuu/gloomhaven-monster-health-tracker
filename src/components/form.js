@@ -9,17 +9,21 @@ export const FormGroupTitle = styled.span`
     font-family: 'custom-font';
     font-style: italic;
     display: block;
+    font-size: 2rem;
 `;
 
 const inputBase = (props) => `
     background-color: rgba(255,255,255, 0.6);
-    font-family: 'custom-font';
+    font-family: 'pirata-one';
     border: 2px solid black;
     color: black;
     width: 100%;
+    font-size: 2rem;
+    padding-top: 6px;
 
-    font-size: 1.2em;
-    padding: 4px;
+    @media(max-width: 900px) {
+      padding-top: 0;
+    }
 `;
 
 export const Input = styled.input`
@@ -32,10 +36,18 @@ export const DropDown = styled.select`
 
 
 const CheckboxContainer = styled.div`
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     font-family: 'custom-font';
-    font-size: 1.2em;
+    font-size: 2em;
+
+    span {
+      padding-top: 8px;
+
+      @media(max-width: 900px) {
+        padding-top: 0;
+      }
+    }
 `;
 
 const CheckboxStyle = styled.input`
@@ -43,23 +55,26 @@ const CheckboxStyle = styled.input`
     ${inputBase}
     width: 35px;
     height: 35px;
-    margin: 0 10px 0 0;
+    margin: 0 0px 0 0;
 
     :checked {
        :after {
-           outline: none;
-           content: "x";
-           position: relative;
-           font-size: 32px;
-           top: -10px;
-           left: 5px;
+          outline: none;
+          content: "x";
+          position: relative;
+          font-size: 2rem;
+          top: -10px;
+          left: 5px;
+
+          @media(max-width: 900px) {
+            top: -8px;
+            left: 8px;
+          }
        }
     }
-
 `;
 
 export const Checkbox = ({title, checked, onChange}) => {
-
     return (
         <CheckboxContainer>
             <CheckboxStyle type="checkbox" checked={checked} onChange={onChange}/> <span>{title}</span>

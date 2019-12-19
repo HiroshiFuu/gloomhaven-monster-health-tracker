@@ -10,13 +10,21 @@ export const Stat = styled.div`
     flex-grow: 0;
     margin-right: 10px;
 
+    :last-child {
+        margin-right: 0;        
+    }
+
     img {
         height: 24px;
         margin-right: 2px;
     }
 
     span {
-        font-family: 'custom-font';
+        font-family: 'pirata-one';
         font-size: 32px;
+    }
+
+    @media(max-width: 900px) {
+        margin-right: 5px;
     }
 `;

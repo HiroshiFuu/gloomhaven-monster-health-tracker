@@ -1,12 +1,16 @@
 import styled from 'styled-components';
 
 export const ViewContainer = styled.div`
-    width: 100%;
-    height: 100%;
-    padding: 10%;
+    height: 100vh;
+    width: 100vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-top: 10vh;
     box-sizing: border-box;
 
-    @media(max-width: 700px) {
-        padding: 15%;
+    @media(max-width: 900px) {
+        padding-left: 8vw;
+        padding-right: 8vw;
+        padding-top: 5vh;
     }
 `;

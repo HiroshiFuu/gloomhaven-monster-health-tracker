@@ -4,11 +4,12 @@ import styled from 'styled-components';
 import { TokenButton } from './button';
 
 const EffectsContainer = styled.div`
-    display:flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 5px;
-    padding:5px;
+    padding: 5px;
     border: 2px solid #B5A596;
-    height: 25px;
     align-items: center;
 `;
 
@@ -18,7 +19,7 @@ const EffectIconContainer = styled.div`
     background-image: url('images/icons/${props => props.type}.png');
     background-size: contain;
     justify-self: center;
-    margin-right: 2px;
+    margin-right: 10px;
 
     :hover {
         cursor: pointer;
@@ -26,6 +27,10 @@ const EffectIconContainer = styled.div`
         button {
             transform: scale(1.1);
         }
+    }
+
+    @media(max-width: 900px) {
+        margin-right: 2px;
     }
 `;
 
@@ -51,8 +56,11 @@ const RemoveEffectButton = styled.button`
 const AddEffectButton = styled(TokenButton)`
     display: block;
     margin-right: 10px;
-    font-size: 1em;
     height: 30px;
+
+    @media(max-width: 900px) {
+        margin-right: 1px;
+    }
 `;
 
 const AddEffectDialogBackdrop = styled.div`
@@ -62,10 +70,11 @@ const AddEffectDialogBackdrop = styled.div`
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.7);
-    display:flex;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    z-index:9;
+    z-index: 9;
 `;
 
 const AddEffectDialog = styled.div`

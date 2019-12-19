@@ -18,14 +18,15 @@ const ButtonBase = styled.button`
 `;
 
 export const TokenButton = styled(ButtonBase)`
-    padding: 3px 5px;
-    
+    padding: 1px 3px;
+    font-size: 1rem;
+    line-height: 14px;
     img {
         height: 20px;
     }
 `;
 
 export const TextButton = styled(ButtonBase)`
-    padding: 3px 10px;
+    padding: 0.5rem;
     font-size: 2em;
 `;

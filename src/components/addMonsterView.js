@@ -15,16 +15,21 @@ const StepTitle = styled.h1`
         margin-top:0;
     }
     font-family: 'custom-font';
+    font-size: 4rem;
+
+    @media(max-width: 900px) {
+        font-size: 3rem;
+    }
 `;
 
 const MonsterSelectionView = styled.div`
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
 `;
 
 const MonsterSelectionItem = styled.img`
-    width:80px;
-    border:2px dashed transparent;
+    width: 120px;
+    border: 2px dashed transparent;
 
     :hover {
         cursor:pointer;
@@ -32,17 +37,31 @@ const MonsterSelectionItem = styled.img`
 
     ${props => 
         props.selected ? `
-            border-color: rgba(0,0,100,0.6);
+            border-color: rgba(0, 0, 100, 0.6);
         `
         : ``
+    }
+
+    @media(max-width: 900px) {
+        width: 70px;
     }
 `;
 
 const AddButton = styled(TextButton)`
-    margin:20px auto 0 auto;
+    margin: 20px auto 5vh auto;
     display: block;
     padding-left: 30px
     padding-right: 30px;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    padding-top: 8px;
+    padding-bottom: 0px;
+
+    @media(max-width: 900px) {
+        font-size: 2rem;
+        line-height: 2.4rem;
+        padding-top: 4px;
+    }
 `;
 
 const AddMonsterView = ({history}) => {
@@ -75,7 +94,7 @@ const AddMonsterView = ({history}) => {
 
     return (
         <ViewContainer>
-            <StepTitle>1. Select monster</StepTitle>
+            <StepTitle>1. 选择怪物</StepTitle>
             <MonsterSelectionView>
                 {getMonsters().map(monster => 
                     <MonsterSelectionItem key={monster.name} src={`images/monsters/Horz-${monster.name}.png`} selected={selectedMonster && selectedMonster.name === monster.name} onClick={() => setSelectedMonster(monster)}/>
@@ -84,23 +103,23 @@ const AddMonsterView = ({history}) => {
                 
             {selectedMonster && 
                 <>
-                    <StepTitle>2. Set attributes</StepTitle>
+                    <StepTitle>2. 设置属性</StepTitle>
 
                     <FormGroup>
-                        <FormGroupTitle>Level</FormGroupTitle>
+                        <FormGroupTitle>等级</FormGroupTitle>
                         <DropDown value={monsterLevel} onChange={e => setMonsterLevel(e.target.value)}>
                             {Object.values(selectedMonster.level).map(x => <option key={x.level}>{x.level}</option>)}
                         </DropDown>
                     </FormGroup>
 
                     <FormGroup>
-                        <FormGroupTitle>Monster numbers (separate with comma to add more then one)</FormGroupTitle>
+                        <FormGroupTitle>怪物编号（如有多个用逗号分隔）</FormGroupTitle>
                         <Input value={monsterNumbers} onChange={e => setMonsterNumbers(e.target.value.split(',').map(x => x.trim()))}/>
                     </FormGroup>
 
-                    <Checkbox title="Is elite?" checked={isElite} onChange={e => setIsElite(e.target.checked)}/>
+                    <Checkbox title="精英?" checked={isElite} onChange={e => setIsElite(e.target.checked)}/>
 
-                    <AddButton onClick={addMonster} disabled={!monsterLevel || monsterNumbers.length === 0 || duplicateNumbers.length !== 0}>Add</AddButton>
+                    <AddButton onClick={addMonster} disabled={!monsterLevel || monsterNumbers.length === 0 || duplicateNumbers.length !== 0}>添加</AddButton>
 
                     {duplicateNumbers &&
                         <ul>

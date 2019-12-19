@@ -13,19 +13,30 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'custom-font';
     src: url('ZIKUTANGSFXST.ttf');
   }
+  @font-face {
+    font-family: 'pirata-one';
+    src: url('PirataOne-Gloomhaven.ttf');
+  }
 
   #root, body, html {
     margin: 0;
     padding: 0;
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
     overflow-x: hidden;
   }
 
   #root {
-    background-image: url('images/background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/images/background.jpg") no-repeat center center fixed;
+    background-size: 100% 100%;
+  }
+
+  h1 {
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
   }
 `;
 
