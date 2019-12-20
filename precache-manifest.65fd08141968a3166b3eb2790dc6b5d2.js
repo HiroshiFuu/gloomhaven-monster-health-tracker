@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bee1ec69a819a2aeae9dd65d58afc837",
+    "revision": "79beb3de8e92c57a089587e929d532c2",
     "url": "/gloomhaven-monster-tracker/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gloomhaven-monster-tracker/static/js/2.9ed96e7f.chunk.js.LICENSE"
   },
   {
-    "revision": "e86bed042897dc6a5e2d",
-    "url": "/gloomhaven-monster-tracker/static/js/main.f696e488.chunk.js"
+    "revision": "a123b8b519eee50a0ea6",
+    "url": "/gloomhaven-monster-tracker/static/js/main.22105d5b.chunk.js"
   },
   {
     "revision": "50518369b350b640ea9f",
