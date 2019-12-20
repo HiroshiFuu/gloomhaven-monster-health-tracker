@@ -10,9 +10,9 @@ export const mainReducer = (state, action) => {
             if (newMonster.hp <= 0) {
                 var monsterClone = { ...state.monsters };
                 delete monsterClone[newMonster.id]
-                return save({ ...state, monsters: monsterClone });
+                return save({ ...state, monsters: monsterClone })
             } else {
-                return save({ ...state, monsters: { ...state.monsters, [newMonster.id]: newMonster } });
+                return save({ ...state, monsters: { ...state.monsters, [newMonster.id]: newMonster } })
             }
         case 'remove_effect':
             return save({
@@ -24,12 +24,12 @@ export const mainReducer = (state, action) => {
                         effects: state.monsters[action.payload.id].effects.filter(x => x !== action.payload.effect)
                     }
                 }
-            });
+            })
         case 'add_effect':
                 const currentEffects = state.monsters[action.payload.id].effects;
 
                 if(currentEffects.indexOf(action.payload.effect) === -1){
-                    currentEffects.push(action.payload.effect);
+                    currentEffects.push(action.payload.effect)
                 }
 
                 return save({
@@ -41,7 +41,7 @@ export const mainReducer = (state, action) => {
                             effects: currentEffects
                         }
                     }
-                });
+                })
         case 'add_monster':
             const nextId = Object.values(state.monsters).length;
             const newMonsters = {
@@ -55,7 +55,7 @@ export const mainReducer = (state, action) => {
                 )
             };
 
-            //newMonsters.sort((a,b) => a.name.localeCompare(b.name));
+            //newMonsters.sort((a,b) => a.name.localeCompare(b.name))
 
             return save({
                 ...state,

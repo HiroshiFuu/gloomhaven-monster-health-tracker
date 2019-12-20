@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ViewContainer = styled.div`
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     padding-left: 8vw;
     padding-right: 8vw;
@@ -12,6 +12,5 @@ export const ViewContainer = styled.div`
         padding-left: 8vw;
         padding-right: 8vw;
         padding-top: 5vh;
-        margin-top: 60px;
     }
 `;

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { withRouter } from 'react-router-dom';
 
@@ -63,14 +63,12 @@ const AddButton = styled(TextButton)`
         font-size: 2rem;
         line-height: 2.4rem;
         padding-top: 4px;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
     }
 `;
 
 const AddMonsterView = ({history}) => {
     const [selectedMonster, setSelectedMonster] = useState();
-    const [monsterLevel, setMonsterLevel] = useState();
+    const [monsterLevel, setMonsterLevel] = useState(0);
     const [monsterNumbers, setMonsterNumbers] = useState([]);
     const [isElite, setIsElite] = useState(false);
 
@@ -123,7 +121,7 @@ const AddMonsterView = ({history}) => {
 
                     <Checkbox title="精英?" checked={isElite} onChange={e => setIsElite(e.target.checked)}/>
 
-                    <AddButton onClick={addMonster} disabled={!monsterLevel || monsterNumbers.length === 0 || duplicateNumbers.length !== 0}>添加</AddButton>
+                    <AddButton onClick={addMonster} disabled={monsterNumbers.length === 0 || duplicateNumbers.length !== 0}>添加</AddButton>
 
                     {duplicateNumbers &&
                         <ul>

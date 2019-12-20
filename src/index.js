@@ -28,8 +28,8 @@ const GlobalStyle = createGlobalStyle`
 
   #root {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     background: url("./images/background.jpg") no-repeat center center fixed;
     background-size: 100% 100%;
   }
