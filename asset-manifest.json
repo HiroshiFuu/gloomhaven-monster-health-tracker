@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/gloomhaven-monster-tracker/static/js/main.3c389b97.chunk.js",
-    "main.js.map": "/gloomhaven-monster-tracker/static/js/main.3c389b97.chunk.js.map",
+    "main.js": "/gloomhaven-monster-tracker/static/js/main.f696e488.chunk.js",
+    "main.js.map": "/gloomhaven-monster-tracker/static/js/main.f696e488.chunk.js.map",
     "runtime-main.js": "/gloomhaven-monster-tracker/static/js/runtime-main.4b7b528d.js",
     "runtime-main.js.map": "/gloomhaven-monster-tracker/static/js/runtime-main.4b7b528d.js.map",
-    "static/js/2.0f9491ec.chunk.js": "/gloomhaven-monster-tracker/static/js/2.0f9491ec.chunk.js",
-    "static/js/2.0f9491ec.chunk.js.map": "/gloomhaven-monster-tracker/static/js/2.0f9491ec.chunk.js.map",
+    "static/js/2.9ed96e7f.chunk.js": "/gloomhaven-monster-tracker/static/js/2.9ed96e7f.chunk.js",
+    "static/js/2.9ed96e7f.chunk.js.map": "/gloomhaven-monster-tracker/static/js/2.9ed96e7f.chunk.js.map",
     "index.html": "/gloomhaven-monster-tracker/index.html",
-    "precache-manifest.1bf0c941774e00aa7033bd153963cc82.js": "/gloomhaven-monster-tracker/precache-manifest.1bf0c941774e00aa7033bd153963cc82.js",
+    "precache-manifest.56f244cf4b44815fcbc84fa7a58f5e6f.js": "/gloomhaven-monster-tracker/precache-manifest.56f244cf4b44815fcbc84fa7a58f5e6f.js",
     "service-worker.js": "/gloomhaven-monster-tracker/service-worker.js",
-    "static/js/2.0f9491ec.chunk.js.LICENSE": "/gloomhaven-monster-tracker/static/js/2.0f9491ec.chunk.js.LICENSE"
+    "static/js/2.9ed96e7f.chunk.js.LICENSE": "/gloomhaven-monster-tracker/static/js/2.9ed96e7f.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.4b7b528d.js",
-    "static/js/2.0f9491ec.chunk.js",
-    "static/js/main.3c389b97.chunk.js"
+    "static/js/2.9ed96e7f.chunk.js",
+    "static/js/main.f696e488.chunk.js"
   ]
 }
