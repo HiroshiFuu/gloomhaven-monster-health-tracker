@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import {StatsContainer, Stat} from './stat';
 
 export const AttributeContainer = styled(StatsContainer)`
-
 `;
 
 const attributesWithIcon = ['curse', 'retaliate', 'pierce', 'shield', 'immobilize', 'flying', 'poison', 'wound', 'target', 'muddle', 'stun', 'disarm']
@@ -14,7 +13,7 @@ export const Attribute = ({attributeText}) => {
     if(attributesWithIcon.indexOf(attribute) !== -1){
         return (
             <Stat>
-                <img src={`./images/icons/${attribute}.png`}  alt=""/>
+                <img src={`./images/icons/${attribute}.png`} alt=''/>
                 <span>{value}</span>
             </Stat>
         );

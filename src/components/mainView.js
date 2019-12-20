@@ -71,7 +71,7 @@ const MainView = () => {
         }
  
     return <div>
-        <AddButton to="add" as={Link}>
+        <AddButton to='add' as={Link}>
             +
         </AddButton>
         <ViewContainer>
