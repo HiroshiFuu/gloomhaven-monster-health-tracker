@@ -28,10 +28,18 @@ const inputBase = (props) => `
 
 export const Input = styled.input`
     ${inputBase}
+
+    @media only screen and (max-device-width: 812px) {
+      width: 270px;
+    }
 `;
 
 export const DropDown = styled.select`
     ${inputBase}
+
+    @media only screen and (max-device-width: 812px) {
+      width: 140px;
+    }
 `;
 
 

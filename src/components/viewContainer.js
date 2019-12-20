@@ -12,5 +12,6 @@ export const ViewContainer = styled.div`
         padding-left: 8vw;
         padding-right: 8vw;
         padding-top: 5vh;
+        margin-top: 60px;
     }
 `;

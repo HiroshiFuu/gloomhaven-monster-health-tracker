@@ -12,7 +12,7 @@ import { getMonsters } from '../data/monsters';
 const StepTitle = styled.h1`
     :first-child {
         padding-top: 0;
-        margin-top:0;
+        margin-top: 0;
     }
     font-family: 'custom-font';
     font-size: 4rem;
@@ -29,10 +29,11 @@ const MonsterSelectionView = styled.div`
 
 const MonsterSelectionItem = styled.img`
     width: 120px;
+    height: 120px;
     border: 2px dashed transparent;
 
     :hover {
-        cursor:pointer;
+        cursor: pointer;
     }
 
     ${props => 
@@ -44,6 +45,7 @@ const MonsterSelectionItem = styled.img`
 
     @media only screen and (max-device-width: 812px) {
         width: 70px;
+        height: 70px;
     }
 `;
 
@@ -61,6 +63,8 @@ const AddButton = styled(TextButton)`
         font-size: 2rem;
         line-height: 2.4rem;
         padding-top: 4px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
     }
 `;
 
