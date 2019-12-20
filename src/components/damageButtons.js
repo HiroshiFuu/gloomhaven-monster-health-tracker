@@ -20,9 +20,9 @@ const DamageButton = styled.img`
 
 const DamageButtons = ({onDamage}) =>
     <DamageButtonContainer>
-        <DamageButton onClick={() => onDamage(1)} src="images/damage-1.png" size="40px"/>
-        <DamageButton onClick={() => onDamage(5)} src="images/damage-5.png" size="45px" />
-        <DamageButton onClick={() => onDamage(10)} src="images/damage-10.png" size="50px" />
+        <DamageButton onClick={() => onDamage(1)} src="./images/damage-1.png" size="40px"/>
+        <DamageButton onClick={() => onDamage(5)} src="./images/damage-5.png" size="45px" />
+        <DamageButton onClick={() => onDamage(10)} src="./images/damage-10.png" size="50px" />
     </DamageButtonContainer>
 
 export default DamageButtons;

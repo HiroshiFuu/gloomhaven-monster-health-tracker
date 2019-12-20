@@ -17,7 +17,7 @@ const StepTitle = styled.h1`
     font-family: 'custom-font';
     font-size: 4rem;
 
-    @media(max-width: 900px) {
+    @media only screen and (max-device-width: 812px)  {
         font-size: 3rem;
     }
 `;
@@ -42,7 +42,7 @@ const MonsterSelectionItem = styled.img`
         : ``
     }
 
-    @media(max-width: 900px) {
+    @media only screen and (max-device-width: 812px) {
         width: 70px;
     }
 `;
@@ -57,7 +57,7 @@ const AddButton = styled(TextButton)`
     padding-top: 8px;
     padding-bottom: 0px;
 
-    @media(max-width: 900px) {
+    @media only screen and (max-device-width: 812px) {
         font-size: 2rem;
         line-height: 2.4rem;
         padding-top: 4px;
@@ -97,7 +97,7 @@ const AddMonsterView = ({history}) => {
             <StepTitle>1. 选择怪物</StepTitle>
             <MonsterSelectionView>
                 {getMonsters().map(monster => 
-                    <MonsterSelectionItem key={monster.name} src={`images/monsters/Horz-${monster.name}.png`} selected={selectedMonster && selectedMonster.name === monster.name} onClick={() => setSelectedMonster(monster)}/>
+                    <MonsterSelectionItem key={monster.name} src={`./images/monsters/Horz-${monster.name}.png`} selected={selectedMonster && selectedMonster.name === monster.name} onClick={() => setSelectedMonster(monster)}/>
                 )}
             </MonsterSelectionView>
                 

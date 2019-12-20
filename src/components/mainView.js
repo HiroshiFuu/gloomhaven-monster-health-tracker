@@ -26,7 +26,7 @@ const AddButton = styled(TextButton)`
     top: 15px;
     left: 15px;
 
-    @media(max-width: 900px) {
+    @media only screen and (max-device-width: 812px) {
         font-size: 3rem;
         line-height: 32px;
         width: 24px;
@@ -35,7 +35,6 @@ const AddButton = styled(TextButton)`
 `;
 
 const MainView = () => {
-
     const [{ monsters }, dispatch] = getState();
 
     const takeDamage = (monster) =>
@@ -72,7 +71,7 @@ const MainView = () => {
         }
  
     return <div>
-        <AddButton to="/add" as={Link}>
+        <AddButton to="add" as={Link}>
             +
         </AddButton>
         <ViewContainer>

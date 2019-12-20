@@ -31,7 +31,7 @@ const MonsterWidgetContainer = styled.div`
         margin-left: 0;
     }
 
-    @media(max-width: 900px) {
+    @media only screen and (max-device-width: 812px) {
         :first-child {
             margin-left: 5px;
         }
@@ -68,7 +68,7 @@ const NumberCircle = styled.div`
     border-color: ${props => props.elite ? '#efb413' : 'white'};
     font-size: 2rem;
 
-    @media(max-width: 900px) {
+    @media only screen and (max-device-width: 812px) {
         font-size: 1.5rem;
         width: 35px;
         height: 35px;
@@ -92,7 +92,7 @@ const MonsterWidget = ({ monster, onDamage, onEffectRemoved, onEffectAdded }) =>
     <MonsterWidgetContainer>
         <MonsterImage>
             <NumberCircle elite={monster.elite}>{monster.number}</NumberCircle>
-            <img src={`images/monsters/Horz-${monster.name}.png`} alt="" />
+            <img src={`./images/monsters/Horz-${monster.name}.png`} alt="" />
         </MonsterImage>
 
         <AttributeContainer>
@@ -101,15 +101,15 @@ const MonsterWidget = ({ monster, onDamage, onEffectRemoved, onEffectAdded }) =>
 
         <StatsContainer>
             <Stat>
-                <img src="images/icons/attack.png" alt=""/>
+                <img src="./images/icons/attack.png" alt=""/>
                 <span>{monster.attack}</span>
             </Stat>
             <Stat>
-                <img src="images/icons/range.png" alt="" />
+                <img src="./images/icons/range.png" alt="" />
                 <span>{monster.range}</span>
             </Stat>
             <Stat>
-                <img src="images/icons/move.png" alt="" />
+                <img src="./images/icons/move.png" alt="" />
                 <span>{monster.move}</span>
             </Stat>
         </StatsContainer>
@@ -118,7 +118,7 @@ const MonsterWidget = ({ monster, onDamage, onEffectRemoved, onEffectAdded }) =>
             <span>{monster.hp} hp</span>
 
             <TokenButton onClick={() => onDamage(-1)}>
-                <img src="images/icons/heal.png" alt="" />
+                <img src="./images/icons/heal.png" alt="" />
             </TokenButton>
         </HealthDisplay>
 

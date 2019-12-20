@@ -24,7 +24,7 @@ export const Stat = styled.div`
         font-size: 32px;
     }
 
-    @media(max-width: 900px) {
+    @media only screen and (max-device-width: 812px) {
         margin-right: 5px;
     }
 `;

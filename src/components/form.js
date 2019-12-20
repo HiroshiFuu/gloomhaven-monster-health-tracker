@@ -21,7 +21,7 @@ const inputBase = (props) => `
     font-size: 2rem;
     padding-top: 6px;
 
-    @media(max-width: 900px) {
+    @media only screen and (max-device-width: 812px) {
       padding-top: 0;
     }
 `;
@@ -44,7 +44,7 @@ const CheckboxContainer = styled.div`
     span {
       padding-top: 8px;
 
-      @media(max-width: 900px) {
+      @media only screen and (max-device-width: 812px) {
         padding-top: 0;
       }
     }
@@ -66,7 +66,7 @@ const CheckboxStyle = styled.input`
           top: -10px;
           left: 5px;
 
-          @media(max-width: 900px) {
+          @media only screen and (max-device-width: 812px) {
             top: -8px;
             left: 8px;
           }

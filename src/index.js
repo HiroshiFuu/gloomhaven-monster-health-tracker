@@ -11,11 +11,11 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'custom-font';
-    src: url('ZIKUTANGSFXST.ttf');
+    src: url('./ZIKUTANGSFXST.ttf');
   }
   @font-face {
     font-family: 'pirata-one';
-    src: url('PirataOne-Gloomhaven.ttf');
+    src: url('./PirataOne-Gloomhaven.ttf');
   }
 
   #root, body, html {
@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("/images/background.jpg") no-repeat center center fixed;
+    background: url("./images/background.jpg") no-repeat center center fixed;
     background-size: 100% 100%;
   }
 

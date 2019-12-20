@@ -8,7 +8,7 @@ export const ViewContainer = styled.div`
     padding-top: 10vh;
     box-sizing: border-box;
 
-    @media(max-width: 900px) {
+    @media only screen and (max-device-width: 812px) {
         padding-left: 8vw;
         padding-right: 8vw;
         padding-top: 5vh;

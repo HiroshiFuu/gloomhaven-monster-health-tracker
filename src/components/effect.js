@@ -16,7 +16,7 @@ const EffectsContainer = styled.div`
 const EffectIconContainer = styled.div`
     width: 32px;
     height: 32px;
-    background-image: url('images/icons/${props => props.type}.png');
+    background-image: url('./images/icons/${props => props.type}.png');
     background-size: contain;
     justify-self: center;
     margin-right: 10px;
@@ -29,7 +29,7 @@ const EffectIconContainer = styled.div`
         }
     }
 
-    @media(max-width: 900px) {
+    @media only screen and (max-device-width: 812px) {
         margin-right: 2px;
     }
 `;
@@ -58,7 +58,7 @@ const AddEffectButton = styled(TokenButton)`
     margin-right: 10px;
     height: 30px;
 
-    @media(max-width: 900px) {
+    @media only screen and (max-device-width: 812px) {
         margin-right: 1px;
     }
 `;
