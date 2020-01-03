@@ -1,4 +1,4 @@
-const STORAGE_KEY = 'Gloomhaven_Monster_Health_Tracker_Data';
+const STORAGE_KEY = 'Gloomhaven_Monster_Tracker_Data';
 
 export const save = (state) => {
     const data = JSON.stringify(state);
