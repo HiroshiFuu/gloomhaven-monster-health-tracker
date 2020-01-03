@@ -94,6 +94,8 @@ const AddMonsterView = ({history}) => {
         ? monsterNumbers.filter(x => Object.values(state.monsters).filter(m => m.name === selectedMonster.name && m.number === x).length > 0)
         : [];
 
+    const nonEmptyMonsterNumbers = selectedMonster && monsterNumbers && monsterNumbers.length && parseInt(monsterNumbers[0]) >= 0;
+
     return (
         <ViewContainer>
             <StepTitle>1. 选择怪物</StepTitle>
@@ -116,12 +118,13 @@ const AddMonsterView = ({history}) => {
 
                     <FormGroup>
                         <FormGroupTitle>怪物编号（如有多个用逗号分隔）</FormGroupTitle>
-                        <Input value={monsterNumbers} onChange={e => setMonsterNumbers(e.target.value.split(',').map(x => x.trim()))}/>
+                        <Input value={monsterNumbers} onChange={e => setMonsterNumbers(e.target.value.split(',').map(x => x.trim()))
+                        }/>
                     </FormGroup>
 
                     <Checkbox title="精英?" checked={isElite} onChange={e => setIsElite(e.target.checked)}/>
 
-                    <AddButton onClick={addMonster} disabled={monsterNumbers.length === 0 || duplicateNumbers.length !== 0}>添加</AddButton>
+                    <AddButton onClick={addMonster} disabled={!nonEmptyMonsterNumbers || duplicateNumbers.length !== 0}>添加</AddButton>
 
                     {duplicateNumbers &&
                         <ul>

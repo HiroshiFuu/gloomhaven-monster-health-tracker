@@ -1,4 +1,4 @@
-const STORAGE_KEY = 'Gloomhaven_Monster_Tracker_Data';
+const STORAGE_KEY = 'Gloomhaven_Monster_Health_Tracker_Data';
 
 export const save = (state) => {
     const data = JSON.stringify(state);
@@ -10,7 +10,7 @@ export const save = (state) => {
 export const load = () => {
     const data = localStorage.getItem(STORAGE_KEY)
 
-    if(!data){
+    if (!data) {
         return false;
     }
 
