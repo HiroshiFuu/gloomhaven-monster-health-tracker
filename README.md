@@ -1,6 +1,6 @@
 # Gloomhaven-Monster-Tracker
 
-A [web application](http://hiroshifuu.github.io/gloomhaven-monster-tracker) that track the monster health and status of Gloomhaven. This application helps to diminish the setup and action time involved with the physical game components per scenario, even more the health tracker board and status tag is so tiny!
+A [web application(http://hiroshifuu.github.io/gloomhaven-monster-tracker)](http://hiroshifuu.github.io/gloomhaven-monster-tracker) that tracks the monster health and status of Gloomhaven. This application helps to diminish the setup and action time involved with the physical game components per scenario, even more the health tracker board and status tag is so tiny!
 
 # Feedback and Bugs
 If you encounter an issue while using this app, please let me know. You can submit the issue right here on Github or contact me directly at [hiroshifuu@outlook.com](mailto:hiroshifuu@outlook.com?subject=[GitHub]%20Gloomhaven-Monster-Tracker).
